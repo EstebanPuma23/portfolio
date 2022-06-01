@@ -1,0 +1,272 @@
+* {
+    margin: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+/* VARIABLES */
+
+:root {
+    --gris-oscuro: #212121;
+    --gris-claro: #303030;
+    --josefine: 'Josefin Sans', sans-serif;
+    --red: #F14747
+}
+
+
+/* FONDOS */
+
+body {
+    background-color: var(--gris-claro);
+    margin-bottom: 50px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    background-color: var(--gris-oscuro);
+}
+
+
+/* HEADER */
+
+header ul.name-header {
+    padding: 0;
+    padding-left: 100px;
+}
+
+header ul {
+    display: flex;
+    color: #7B7B7B;
+    font-family: var(--josefine);
+    font-weight: 400;
+    font-size: 20px;
+    letter-spacing: 3px;
+    justify-content: center;
+    padding-right: 100px;
+}
+
+header ul li {
+    margin: 30px;
+    list-style-type: none;
+}
+
+header ul li a {
+    color: #7B7B7B;
+    text-decoration: none;
+}
+
+
+/* SECCIÓN PRINCIPAL */
+
+.primary {
+    display: flex;
+    justify-content: center;
+    margin: 56px;
+}
+
+.primary .presentation {
+    width: 50%;
+    margin: auto;
+    text-align: center;
+    font-family: var(--josefine);
+    font-size: 40px;
+    color: white;
+}
+
+.primary h2 {
+    text-align: start;
+    line-height: 5rem;
+}
+
+.primary span {
+    color: var(--red);
+}
+
+.primary h4 {
+    text-align: left;
+    font-style: oblique;
+    font-size: 35px;
+    color: #7B7B7B;
+}
+
+#img-container {
+    width: 50%;
+    text-align: center;
+}
+
+#primary-image {
+    width: 70%;
+}
+
+
+/* About */
+
+#about .presentation {
+    color: white;
+    font-family: var(--josefine);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 70%;
+    margin: 0 auto;
+    padding: 35px;
+}
+
+#about h2 {
+    color: white;
+    font-size: 32px;
+    font-family: var(--josefine);
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.main-p {
+    font-size: 26px;
+    margin-bottom: 20px;
+}
+
+.info-container {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+
+.info-container .info-item {
+    max-width: 50%;
+    flex: 0 0 50%;
+    margin: 15px 0;
+}
+
+.info-container span {
+    font-weight: 600;
+    font-size: 16px;
+    color: var(--red);
+}
+
+.presentation .info-p {
+    font-size: 18px;
+    text-align: left;
+    line-height: 26px;
+}
+
+
+/* ABOUT ME */
+
+.about-me {
+    font-family: var(--josefine);
+}
+
+.about-me #main-title {
+    font-size: 35px;
+    text-align: center;
+    color: white;
+    margin: 50px 0;
+}
+
+
+/* Sección Académica */
+
+.about-me .study-cards {
+    display: flex;
+}
+
+.about-me .study-cards article {
+    width: 50%;
+    margin: 0px 50px 50px 50px;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.about-me .study-cards .study-title {
+    margin-bottom: 40px;
+    font-size: 35px;
+    color: var(--red);
+    background-color: var(--gris-oscuro);
+    width: 90%;
+    padding: 16px;
+    text-align: center;
+}
+
+.about-me .study-cards .institute {
+    color: var(--red);
+}
+
+.about-me .study-cards .study-info {
+    color: white;
+    margin-top: 30px;
+}
+
+.about-me .study-cards .act-work {
+    text-align: center;
+    line-height: 22px;
+}
+
+
+/* Services Section */
+
+#about .title-serv {
+    margin-bottom: 50px;
+}
+
+#about .title-serv h2 {
+    margin: 15px 0;
+}
+
+.services {
+    display: flex;
+    font-family: var(--josefine);
+    justify-content: space-evenly;
+}
+
+.services .card {
+    border-radius: 30px;
+    padding: 30px 0;
+    text-align: center;
+    background-color: var(--gris-oscuro);
+    width: 25%;
+    transition: all 0.4s;
+}
+
+.services .card .icon {
+    font-size: 50px;
+    margin: 20px 0;
+    color: var(--red);
+}
+
+.services .card .serv-titl {
+    font-size: 20px;
+    color: white;
+}
+
+.services .card p {
+    margin-top: 15px;
+    color: white;
+}
+
+.services .card:hover {
+    box-shadow: 0px 0px 20px var(--red);
+    transform: scale(1.05);
+}
+
+.in-progress {
+    margin-top: 70px;
+    text-align: center;
+    color: white;
+}
+
+.in-progress h3 {
+    margin-top: 16px;
+    font-family: var(--josefine);
+    font-size: 36px;
+}
+
+.in-progress i {
+    font-size: 50px;
+}
