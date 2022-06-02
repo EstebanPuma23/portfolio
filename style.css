@@ -67,6 +67,7 @@ header ul li a {
     display: flex;
     justify-content: center;
     margin: 56px;
+    margin-bottom: 0;
 }
 
 .primary .presentation {
@@ -103,8 +104,38 @@ header ul li a {
     width: 70%;
 }
 
+.mobile {
+    display: none;
+}
+
+.show-more {
+    width: 40%;
+    padding: 20px;
+    border-radius: 20px;
+    margin: 50px auto;
+    justify-content: center;
+    text-align: center;
+    background-color: var(--red);
+    transition: all .7s ease;
+}
+
+.show-more a {
+    text-decoration: none;
+    color: white;
+    font-size: 24px;
+    font-family: var(--josefine);
+}
+
+.show-more:active {
+    background-color: #651717;
+}
+
 
 /* About */
+
+#about {
+    padding-top: 50px;
+}
 
 #about .presentation {
     color: white;
@@ -209,6 +240,42 @@ header ul li a {
 }
 
 
+/* Skills Section */
+
+.skills {
+    margin-top: 40px;
+}
+
+.skills ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0 65px;
+}
+
+.skills ul li {
+    display: flex;
+    font-family: var(--josefine);
+    color: white;
+    font-size: 24px;
+    flex: 0 0 100%;
+    justify-content: space-between;
+    margin-bottom: 7px;
+}
+
+.skills ul li:last-child{
+    margin-bottom: 0;
+}
+
+.skills span {
+    font-size: 20px;
+}
+
+.skills ul li #solid {
+    color: goldenrod;
+}
+
+
 /* Services Section */
 
 #about .title-serv {
@@ -269,4 +336,124 @@ header ul li a {
 
 .in-progress i {
     font-size: 50px;
+}
+
+@media(max-width:425px) {
+    header {
+        margin-bottom: 50px;
+    }
+    header ul.name-header {
+        padding: 0;
+    }
+    header ul {
+        font-size: 16px;
+        justify-content: start;
+        padding: 0;
+        margin: 0;
+        width: 100%;
+    }
+    header ul li a {
+        display: none;
+    }
+    #img-container {
+        display: none;
+    }
+    .primary {
+        margin: 0 15px;
+    }
+    .primary .presentation {
+        font-size: 32px;
+        text-align: start;
+        margin: 0;
+        width: 100%;
+    }
+    .primary h2 {
+        text-align: start;
+        line-height: 50px;
+    }
+    .primary h4 {
+        font-size: 19px;
+    }
+    .mobile {
+        display: block;
+        margin-top: 50px;
+    }
+    .show-more {
+        display: flex;
+        width: 40%;
+        padding: 20px;
+        border-radius: 20px;
+        margin: 50px auto;
+        justify-content: center;
+        background-color: var(--red);
+        transition: all .7s ease;
+    }
+    .show-more a {
+        text-decoration: none;
+        color: white;
+        font-size: 24px;
+        font-family: var(--josefine);
+    }
+    .show-more:active {
+        background-color: #651717;
+    }
+
+    .skills .title-serv{
+        display: block;
+    }
+
+    .downl-mobile{
+        display: block;
+    }
+
+    #about {
+        display: none;
+        margin-top: 30px;
+        padding: 0 10px;
+        padding-top: 50px;
+    }
+    #about .presentation {
+        width: 100%;
+        padding: 0;
+    }
+    #about .services {
+        display: none;
+    }
+    .info-container {
+        flex-direction: column;
+        flex-wrap: nowrap;
+    }
+    .info-container .info-item {
+        max-width: 100%;
+    }
+    .about-me .study-cards,
+    .title-serv {
+        display: none;
+    }
+    .mobile .services {
+        flex-wrap: wrap;
+    }
+    .mobile .services .card {
+        width: 40%;
+        margin-bottom: 30px;
+    }
+    .mobile .services .card .icon {
+        font-size: 24px;
+    }
+    .mobile .services .card .serv-titl {
+        font-size: 16px;
+    }
+    .mobile .services .card .serv-p {
+        display: none;
+    }
+}
+
+@media(min-width: 1024px){
+    .skills ul {
+        padding: 0 625px;
+    }
+    
+    .downl-mobile{
+        display: none;
+    }
 }

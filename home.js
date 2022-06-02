@@ -1,6 +1,7 @@
-var typed = new Typed(".typing", {
-    strings: ["", "Diseñador Web", "Diseñador Responsive", "Diseñador Grafico", "Comunity Manager"],
-    typeSpeed: 100,
-    BackSpeed: 60,
-    loop: true
+let btn = document.querySelector('.btn');
+btn.addEventListener("click", function() {
+    let about = document.querySelector('#about')
+    about.style.display = 'block'
+
+
 })
