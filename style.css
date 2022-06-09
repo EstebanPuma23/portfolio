@@ -348,19 +348,18 @@ header ul li a {
 
 /* CONTACT SECTION */
 
-.contact-me {
-    width: 85%;
-    background-color: white;
+.contact-me{
     margin: auto;
-    padding: 30px 0;
-    border-radius: 20px;
 }
 
 .contact-me #form {
+    background-color: white;
+    border-radius: 20px;
+    padding: 25px;
     font-family: 'Roboto Slab', serif;
     display: flex;
     flex-direction: column;
-    width: 85%;
+    width: 80%;
     margin: auto;
 }
 
@@ -391,6 +390,7 @@ textarea {
     border-radius: 6px;
     border: solid 1.4px var(--gris-claro);
     padding: 10px 7px;
+    resize: none;
 }
 
 .contact-me #form button {
@@ -520,7 +520,7 @@ textarea {
 
     .contact-me {
         width: 50%;
-        margin-top: 70px;
+        padding-top: 30px;
     }
 
     .contact-me #form h3{
