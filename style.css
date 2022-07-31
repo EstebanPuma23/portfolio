@@ -124,14 +124,13 @@ header ul li a {
     text-align: center;
     background-color: var(--red);
     transition: all .7s ease;
-}
-
-.show-more a {
+    cursor: pointer;
     text-decoration: none;
     color: white;
     font-size: 24px;
     font-family: var(--josefine);
 }
+
 
 .show-more:active {
     background-color: #651717;
@@ -295,6 +294,7 @@ header ul li a {
 
 .services {
     display: flex;
+    margin: 5em 0;
     font-family: var(--josefine);
     justify-content: space-evenly;
 }
@@ -353,7 +353,7 @@ header ul li a {
 }
 
 .contact-me #form {
-    background-color: white;
+    background-color: #ebebeb;
     border-radius: 20px;
     padding: 25px;
     font-family: 'Roboto Slab', serif;
@@ -373,6 +373,7 @@ header ul li a {
 .contact-me #form p {
     width: 100%;
     font-size: 11.5px;
+    font-family: 'Josefin Sans';
     margin: 20px 0;
 }
 
@@ -468,6 +469,10 @@ textarea {
     .downl-mobile {
         display: block;
     }
+
+    .downl-PC{
+        display: none;
+    }
     #about {
         display: none;
         margin-top: 30px;
@@ -514,6 +519,13 @@ textarea {
     .skills ul {
         padding: 0 625px;
     }
+
+    .downl-PC{
+        display: block;
+        text-align: center;
+        margin: 60px 0;
+    }
+
     .downl-mobile {
         display: none;
     }
