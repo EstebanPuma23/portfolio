@@ -7,6 +7,14 @@ btn.addEventListener("click", function() {
 });
 
 
+var typed = new Typed(".typing", {
+    strings: ["Desarrollador Web", "Técnico Electrónico"],
+    typeSpeed: 100,
+    BackSpeed: 60,
+    loop: true
+})
+
+
 const $form = document.querySelector('#form');
         const $buttomMailTo = document.querySelector('#trucazo');
 
